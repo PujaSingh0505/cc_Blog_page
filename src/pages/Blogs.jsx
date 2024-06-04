@@ -23,7 +23,7 @@ const Blogs = () => {
       id: 3,
       description: "WIT was a technical event hosted by the founders",
       imageUrl: "../../assests/Rectangle 35.png",
-      button2: "Read article",
+      button: "Read article",
       button2: <FiArrowUpRight/>,
     },
     {
