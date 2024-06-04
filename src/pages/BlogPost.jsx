@@ -107,7 +107,26 @@ const BlogList = () => {
           </p>
         </div>
       </div>
-
+      <div className="flex flex-col w-full lg:w-1/4">
+        <p className="font-bold mx-4 my-4 lg:mx-8 lg:my-8">Recent Blogs</p>
+        <div className="flex flex-col space-y-4">
+          {blogs.map((blog, index) => (
+            <div key={index} className="flex flex-col">
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="w-full h-36 lg:w-60 lg:h-40 object-cover rounded"
+              />
+              <div className="flex justify-between items-center space-x-2 my-4">
+                <a href="#" className="text-blue-500 hover:underline">
+                  {blog.title}
+                </a>
+                <FiArrowUpRight className="text-black text-lg" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       
     </div>
   );
